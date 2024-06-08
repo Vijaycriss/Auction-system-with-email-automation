@@ -90,10 +90,11 @@ DATABASES = {
     }
 }
 
-database_url = env('DATABASE_URL')
-DATABASES = {
-    'default': dj_database_url.parse(database_url)
-}
+
+# database_url = env('DATABASE_URL')
+# DATABASES = {
+#     'default': dj_database_url.parse(database_url)
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -131,14 +132,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-if not DEBUG:
-    STATIC_ROOT = BASE_DIR / "staticfiles"
-    
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-    
-    STATICFILES_DIRS = [
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
     ]   
+    
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    
+
 
 
 # Default primary key field type

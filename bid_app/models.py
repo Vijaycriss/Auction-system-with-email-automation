@@ -18,7 +18,7 @@ class AuctionUser(models.Model):
     image = models.FileField(null=True, blank=True)
     user_type = models.CharField(max_length=100,null=True, blank=True)
     status = models.CharField(max_length=100,null=True, blank=True, default="pending")
-    membership = models.ForeignKey(Member_fee,on_delete=models.CASCADE,null=True, blank=True)
+    #membership = models.ForeignKey(Member_fee,on_delete=models.CASCADE,null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     adhar_card = models.FileField(null=True, blank=True)
     pan_card = models.FileField(null=True, blank=True)

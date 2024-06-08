@@ -1,2 +1,17 @@
-.env
-.venv
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore __pycache__ directories
+__pycache__/
+*.py[cod]
+
+# Ignore other common files and directories
+*.log
+*.sqlite3
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

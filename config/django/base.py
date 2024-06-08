@@ -88,6 +88,8 @@ DATABASES = {
     }
 }
 
+#postgres://online_auction_vijay_user:nXSBiCDftwKo4he8wlXzp9iWWu9zhIco@dpg-cpi2itcf7o1s73bb2ev0-a.oregon-postgres.render.com/online_auction_vijay
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
